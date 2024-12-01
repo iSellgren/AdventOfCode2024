@@ -52,6 +52,19 @@
 	</Configurations>
 	<Files>
 		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Input">
+			<File RelativePath=".\Day1.txt"/>
+		</Filter>
+		<Filter Name="Tests">
+			<File RelativePath=".\Day1_tests.f90">
+			</File>
+		</Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File RelativePath=".\array_Utils.f90">
+			</File>
+			<File RelativePath=".\file_Utils.f90">
+			</File>
+		</Filter>
 		<Filter Name="Source Files">
 			<File RelativePath=".\Day1_Part1.f90">
 			</File>
@@ -60,12 +73,7 @@
 			<File RelativePath=".\main.f90">
 			</File>
 		</Filter>
-		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
-			<File RelativePath=".\array_Utils.f90"/>
-			<File RelativePath=".\file_Utils.f90"/>
-		</Filter>
-		<File RelativePath=".\ReadMe.txt">
-		</File>
+		<File RelativePath=".\ReadMe.txt"/>
 	</Files>
 	<Globals/>
 </VisualStudioProject>

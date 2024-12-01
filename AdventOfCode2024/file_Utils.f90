@@ -2,7 +2,7 @@ module file_Utils
     implicit none
     contains
 
-    subroutine read_paired_data(filename, left, right, n)
+    subroutine read_data(filename, left, right, n)
         character(len=*), intent(in) :: filename
         integer, allocatable, intent(out) :: left(:), right(:)
         integer, intent(out) :: n
@@ -36,6 +36,6 @@ module file_Utils
         right = temp_right(1:n)
 
         deallocate(temp_left, temp_right)
-    end subroutine read_paired_data
+    end subroutine read_data
 
 end module file_Utils

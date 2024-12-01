@@ -3,7 +3,7 @@ module array_Utils
     contains
 !Part1
     subroutine sort_array(arr, n)
-        ! Sorterar en array i stigande ordning
+        ! Sorterar en array
         integer, intent(inout) :: arr(:)
         integer, intent(in) :: n
         integer :: i, j, temp

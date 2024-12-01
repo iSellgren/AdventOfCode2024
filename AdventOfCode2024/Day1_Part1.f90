@@ -14,8 +14,7 @@ module Day1_Part1
 
         print *, "Kor Dag 1, Del 1..."
 
-        ! Läs in data från fil
-        call read_paired_data(input_file, left, right, n)
+        call read_data(input_file, left, right, n)
 
         call sort_array(left, n)
         call sort_array(right, n)
