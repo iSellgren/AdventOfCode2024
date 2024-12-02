@@ -6,7 +6,7 @@ contains
     subroutine test_sort_array()
         integer, dimension(10) :: array
         integer, dimension(10) :: sorted_arr
-        integer :: i, passed
+        integer :: passed
 
         array = [6, 2, 3, 9, 1, 10, 7, 4, 8, 5]
 

@@ -20,7 +20,7 @@ module array_Utils
     end subroutine sort_array
 !Part1
     integer function calculate_total_distance(left, right, n)
-        ! Beräknar total distans mellan två listor
+        ! BerÃ¤knar total distans mellan tvÃ¥ listor
         integer, intent(in) :: left(:), right(:), n
         integer :: i
 
@@ -31,7 +31,7 @@ module array_Utils
     end function calculate_total_distance
 !Part2
     integer function count_occurrences(value, array, n)
-        ! Räknar hur många gånger ett värde förekommer i en array
+        ! RÃ¤knar hur mÃ¥nga gÃ¥nger ett vÃ¤rde fÃ¶rekommer i en array
         integer, intent(in) :: value, array(:), n
         integer :: i
 

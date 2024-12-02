@@ -9,7 +9,7 @@ contains
         integer :: n_reports, max_levels, i, safe_count
         character(len=128) :: input_file
 
-        input_file = 'Day2.txt'
+        input_file = 'input/Day2.txt'
 
         print *, "Kor Day 2, Part 1"
 

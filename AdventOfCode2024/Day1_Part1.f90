@@ -5,12 +5,12 @@ module Day1_Part1
     contains
 
     subroutine run_day1_part1()
-        ! Kör lösning för Dag 1, Del 1
+        ! KÃ¶r lÃ¶sning fÃ¶r Dag 1, Del 1
         integer, allocatable :: left(:), right(:)
         integer :: n, total_distance
         character(len=128) :: input_file
 
-        input_file = 'Day1.txt'
+        input_file = 'input/Day1.txt'
 
         print *, "Kor Dag 1, Del 1..."
 
