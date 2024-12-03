@@ -16,7 +16,7 @@ OUTPUT = program.out
 BUILD_DIR = build
 
 # Module source files
-MODULE_SOURCES = array_Utils.f90 file_Utils.f90 Day1_Part1.f90 Day1_Part2.f90 Day2_Part1.f90 Day2_Part2.f90
+MODULE_SOURCES = array_Utils.f90 file_Utils.f90 Day1_Part1.f90 Day1_Part2.f90 Day2_Part1.f90 Day2_Part2.f90 Day3_Part1.f90
 
 # All test and main source files (files that depend on modules)
 SOURCES = Day1_tests.f90 Day2_tests.f90 main.f90
@@ -29,13 +29,20 @@ ALL_OBJECTS = $(MODULE_OBJS) $(OBJECTS)
 # Default target to build the release executable
 all: release
 
+# Preprocess input for Day 3
+.PHONY: preprocess_day3
+preprocess_day3:
+	./preprocess_day3.sh
+
 # Release build
+.PHONY: release
 release: FCFLAGS = $(RELEASE_FLAGS)
-release: $(BUILD_DIR)/$(OUTPUT)
+release: preprocess_day3 $(BUILD_DIR)/$(OUTPUT)
 
 # Debug build
+.PHONY: debug
 debug: FCFLAGS = $(DEBUG_FLAGS)
-debug: $(BUILD_DIR)/$(OUTPUT)
+debug: preprocess_day3 $(BUILD_DIR)/$(OUTPUT)
 
 # Create the build directory if it doesn't exist
 $(BUILD_DIR):
