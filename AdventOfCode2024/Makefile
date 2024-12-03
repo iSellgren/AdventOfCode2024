@@ -16,7 +16,7 @@ OUTPUT = program.out
 BUILD_DIR = build
 
 # Module source files
-MODULE_SOURCES = array_Utils.f90 file_Utils.f90 Day1_Part1.f90 Day1_Part2.f90 Day2_Part1.f90 Day2_Part2.f90 Day3_Part1.f90
+MODULE_SOURCES = array_Utils.f90 file_Utils.f90 Day1_Part1.f90 Day1_Part2.f90 Day2_Part1.f90 Day2_Part2.f90 Day3_Part1.f90 Day3_Part2.f90
 
 # All test and main source files (files that depend on modules)
 SOURCES = Day1_tests.f90 Day2_tests.f90 main.f90

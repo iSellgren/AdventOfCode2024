@@ -5,6 +5,7 @@ program main
     use Day1_Part2
     use Day2_Part1
     use Day3_Part1
+    use Day3_Part2
     implicit none
 
     !call test_sort_array()
@@ -16,6 +17,7 @@ program main
     !call test_safe_report_part2()
     !call run_day2_part1()
     !call run_day2_part2()
-    call run_day3_part1()
+    !call run_day3_part1()
+    call run_day3_part2()
 
     end program main
