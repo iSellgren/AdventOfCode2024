@@ -65,7 +65,6 @@ contains
 
             if (len_trim(line) == 0) cycle
 
-            print *, "Processing line:", trim(line)
             call parse_levels(line, temp, level_count)
             call store_report(temp, level_count, reports, level_counts, n_reports, max_levels)
         end do
@@ -177,7 +176,6 @@ contains
 
         read(10, '(A)', iostat=iostat) line
         if (iostat == 0) then
-            print *, "Read line successfully:", trim(line)
             success = .true.
         else
             print *, "Failed to read line. IOSTAT =", iostat 

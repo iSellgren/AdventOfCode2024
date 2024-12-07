@@ -7,6 +7,7 @@ contains
         integer(kind=8) :: res, a, b, ios
         character(len=256), parameter :: input_file = 'input/Day3_cheat.txt'
         res = 0
+        print *, "Kor Day 3, Part 1"
         open(unit=10, file=input_file, status='old', action='read', iostat=ios)
         do
             read(10, *, iostat=ios) a, b

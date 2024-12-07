@@ -9,7 +9,7 @@ contains
         integer :: total, ios
         integer(kind=8) :: x, y
         logical :: skip
-
+        print *, "Kor Day 3, Part 1"
         total = 0; skip = .false.
         open(10, file=file, status='old', action='read', iostat=ios)
         if (ios /= 0) stop 'Error opening file'
