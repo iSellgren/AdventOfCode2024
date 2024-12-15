@@ -14,6 +14,8 @@ program main
     use Day6_part1
     use Day7_Part1
     use Day7_Part2
+    use Day8_Part1
+    use Day8_Part2
     implicit none
 
     !call test_sort_array()
@@ -34,5 +36,7 @@ program main
     !call run_day5_part2()
     !call run_day6_part1()
     !call run_day7_part1()
-    call run_day7_part2()
+    !call run_day7_part2()
+    !call run_day8_part1()
+    call run_day8_part2()
     end program main

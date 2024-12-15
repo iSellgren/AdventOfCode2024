@@ -11,7 +11,7 @@ contains
         implicit none
 
         integer(kind=IntegerKind) :: InputUnit, FinalResult
-
+        print *, "Kor Day 7, Part 2"
         FinalResult = 0
 
         open(newunit=InputUnit, file='input/Day7.txt', status='old', action='read')
